@@ -44,14 +44,14 @@ gulp.task('pug:dev', function () {
       .src('./assets/pug/index.pug')
       .pipe(plumber(plumberNotify('Pug')))
       .pipe(pug())
-      .pipe(gulp.dest('./assets/html/'))
+      .pipe(gulp.dest('./assets/html/index.pug'))
   );
 });
 
 gulp.task('html:dev', function () {
 	return (
 		gulp
-			.src(['./assets/html/**/*.html', '!./assets/html/blocks/*.html'])
+			.src('./assets/html/**/*.html')
 			.pipe(changed('./build/', { hasChanged: changed.compareContents }))
 			.pipe(plumber(plumberNotify('HTML')))
 			.pipe(fileInclude(fileIncludeSetting))

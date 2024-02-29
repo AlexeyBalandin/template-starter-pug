@@ -12,7 +12,7 @@ gulp-sourcemaps - Исходные карты для CSS
 gulp-plumber - Фикс ошибок при сборке
 gulp-notify - Нотификации
 gulp-group-css-media-queries - Группировка CSS медиа запросов
-gulp-pug
+gulp-pug - сборка Pug
 
 ----------------------------------------------------------------------
 
