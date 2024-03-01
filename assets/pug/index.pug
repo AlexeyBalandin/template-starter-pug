@@ -1,4 +1,8 @@
-include ./blocks/head.pug
-include ./blocks/header.pug
-include ./blocks/footer.pug
-include ./blocks/scripts.pug
+doctype html
+html(lang="en")
+  include ./blocks/head.pug
+  body 
+    include ./blocks/header.pug
+    include ./blocks/mobile-nav.pug
+    include ./blocks/footer.pug
+    include ./blocks/scripts.pug

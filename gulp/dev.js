@@ -44,7 +44,7 @@ gulp.task('pug:dev', function () {
       .src('./assets/pug/index.pug')
       .pipe(plumber(plumberNotify('Pug')))
       .pipe(pug())
-      .pipe(gulp.dest('./assets/html/index.pug'))
+      .pipe(gulp.dest('./assets/html/'))
   );
 });
 
